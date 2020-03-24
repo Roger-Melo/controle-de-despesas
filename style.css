@@ -106,13 +106,13 @@ input[type='number'] {
   outline: 0;
 }
 
-.list {
+.transactions {
   list-style-type: none;
   padding: 0;
   margin-bottom: 40px;
 }
 
-.list li {
+.transactions li {
   background-color: #fff;
   box-shadow: var(--box-shadow);
   color: #333;
@@ -123,11 +123,11 @@ input[type='number'] {
   margin: 10px 0;
 }
 
-.list li.plus {
+.transactions li.plus {
   border-right: 5px solid #2ecc71;
 }
 
-.list li.minus {
+.transactions li.minus {
   border-right: 5px solid #c0392b;
 }
 
@@ -147,6 +147,6 @@ input[type='number'] {
   transition: opacity 0.3s ease;
 }
 
-.list li:hover .delete-btn {
+.transactions li:hover .delete-btn {
   opacity: 1;
 }
