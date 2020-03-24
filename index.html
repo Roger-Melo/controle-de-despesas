@@ -12,41 +12,37 @@
     <div class="container">
       <h4>Saldo atual</h4>
       
-      <h1 data-js="balance" class="balance">R$ 0.00</h1>
+      <h1 id="balance" class="balance">R$ 0.00</h1>
 
       <div class="inc-exp-container">
         <div>
           <h4>Receitas</h4>
-          <p data-js="money-plus" class="money plus">+ R$0.00</p>
+          <p id="money-plus" class="money plus">+ R$0.00</p>
         </div>
 
         <div>
           <h4>Despesas</h4>
-          <p data-js="money-minus" class="money minus">- R$0.00</p>
+          <p id="money-minus" class="money minus">- R$0.00</p>
         </div>
       </div>
 
       <h3>Transações</h3>
       
-      <ul data-js="transactions" class="transactions">
-        <!-- <li class="minus">
-          Salário <span>- R$ 400</span><button class="delete-btn">x</button>
-        </li> -->
-      </ul>
+      <ul id="transactions" class="transactions"></ul>
 
       <h3>Adicionar transação</h3>
       
-      <form data-js="form">
+      <form id="form">
         <div class="form-control">
           <label for="text">Nome</label>
-          <input autofocus type="text" data-js="text" placeholder="Nome da transação" />
+          <input autofocus type="text" id="text" placeholder="Nome da transação" />
         </div>
 
         <div class="form-control">
           <label for="amount">Valor <br />
             <small>(negativo - despesas, positivo - receitas)</small>
           </label>
-          <input type="number" data-js="amount" placeholder="Valor da transação" />
+          <input type="number" id="amount" placeholder="Valor da transação" />
         </div>
 
         <button class="btn">Adicionar</button>
