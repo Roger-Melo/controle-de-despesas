@@ -21,7 +21,7 @@ body {
 
 .container {
   margin: 30px auto;
-  width: 350px;
+  width: 550px;
 }
 
 h1 {
@@ -79,7 +79,18 @@ label {
 }
 
 input[type='text'],
-input[type='number'] {
+input[type='number'],
+input[type='date'],
+input[type='checkbox'] {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+select{
   border: 1px solid #dedede;
   border-radius: 2px;
   display: block;
@@ -149,4 +160,11 @@ input[type='number'] {
 
 .transactions li:hover .delete-btn {
   opacity: 1;
+}
+
+small{
+  background-color: blue;
+  color: white;
+  padding: 2px;
+  
 }
